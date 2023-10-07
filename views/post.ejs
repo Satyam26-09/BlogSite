@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+
+<% if(t){ %>
+    <h1><%= post.title %></h1>
+    <p><%= post.content %></p>
+<% } else{ %>
+    <h1>Err...</h1>
+    <h2>No Post Found with this name.</h2>
+<% } %>
+
+<%- include("partials/footer") -%>
+
